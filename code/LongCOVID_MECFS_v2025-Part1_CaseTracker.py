@@ -25,7 +25,7 @@ import time
 np.random.seed(42) #meaning of life random seed :)
 
 # File paths
-base_folder = 'F:/Corona/'
+base_folder = 'F:/Corona/' #adjust to your own needs
 cases_file_path = os.path.join(base_folder, 'input-cases-paessler.csv')
 vaccinations_file_path = os.path.join(base_folder, 'germany_vaccinations_timeseries_v3.csv')
 
@@ -52,8 +52,8 @@ long_covid_prob_initial = (0.095, 0.11)  # Initial probability range
 long_covid_prob_final = (0.06, 0.08)    # Final probability range
 mecfs_prob_range = (0.0675,0.0825)           # MECFS transition probability (11.6%) #0.05-0.06% #0.0675,0.0825
 
-disability_rating_means = {'long_covid': 0.24, 'mecfs': 0.31}
-#disability_rating_means = {'long_covid': 0.4, 'mecfs': 0.58}
+disability_rating_means = {'long_covid': 0.24, 'mecfs': 0.31} # low severity
+#disability_rating_means = {'long_covid': 0.4, 'mecfs': 0.58} # high severity
 disability_std = 0.1
 
 # MECFS recovery rate
@@ -64,8 +64,8 @@ daily_recovery_rate = mecfs_recovery_rate / 365  # Daily recovery rate
 
 # Age Groups and Probabilities
 age_groups = ['0-19', '20-39', '40-59', '60+']
-age_group_prob_sets = [[0.184640, 0.238318, 0.273365, 0.303677]]  # Probabilities must sum to 1
-#age_group_prob_sets = [[0.23899,0.171371,0.196573,0.393066]]
+age_group_prob_sets = [[0.184640, 0.238318, 0.273365, 0.303677]]  # Probabilities must sum to 1 # Population distribution 1
+#age_group_prob_sets = [[0.23899,0.171371,0.196573,0.393066]] # Population distribution 2
 
 # Function: Probability sliding over time
 def get_sliding_probability(current_date):
@@ -269,7 +269,7 @@ for row in df_cases.itertuples(index=False):
     print(f"{recoveries_today} MECFS cases recovered today.")
 
 
-    # Batch Save to File
+    # Batch Save to File, adjust names according to the selected parameter combinations (age group population distribution, disability rating)
     if len(long_covid_case_tracker) > 10_000:
         df_temp = pd.DataFrame(long_covid_case_tracker)
         df_temp.to_csv(os.path.join(base_folder, 'long_covid_cases_popavg_024_031_v15.csv'), mode='a', header=False, index=False)
