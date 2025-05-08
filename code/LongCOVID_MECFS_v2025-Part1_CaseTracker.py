@@ -1,14 +1,20 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan 31 11:33:07 2025
+# ==================================================================================================
+# The rising cost of Long COVID and ME/CFS in Germany (2020 - 2024)
+# by James Daniell, Johannes Brand, Dirk Paessler, Joerg Heydecke, Simon Schoening and Amy McLennan
+# ==================================================================================================
+#
+# Optimized Long COVID and ME/CFS Case Tracker with vaccination rates, 
+# reinfection probabilities, and age group distributions
+# 
+# Created: 
+# 2025-01-31
+# 
+# Author:
+# James Daniell
+#
+# -*- coding: utf-8 -*- 	
+# ==================================================================================================
 
-@author: JamesBeachPC
-"""
-
-# -*- coding: utf-8 -*- 
-"""
-Optimized Long COVID Case Tracker with Age Groups
-"""
 
 import pandas as pd
 import numpy as np
