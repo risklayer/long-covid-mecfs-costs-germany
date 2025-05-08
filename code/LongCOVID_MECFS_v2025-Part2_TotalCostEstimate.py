@@ -1,23 +1,20 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb  3 16:29:24 2025
+# ==================================================================================================
+# The rising cost of Long COVID and ME/CFS in Germany (2020 - 2024)
+# by James Daniell, Johannes Brand, Dirk Paessler, Joerg Heydecke, Simon Schoening and Amy McLennan
+# ==================================================================================================
+#
+# Long COVID and ME/CFS cost calculation
+# 
+# Created: 
+# 2025-01-31
+# 
+# Author:
+# James Daniell
+#
+# -*- coding: utf-8 -*- 	
+# ==================================================================================================
 
-@author: JamesBeachPC
-"""
 
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb  3 12:41:58 2025
-
-@author: JamesBeachPC
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov  7 20:12:15 2024
-
-@author: JamesBeachPC
-"""
 import pandas as pd
 import numpy as np
 import os
