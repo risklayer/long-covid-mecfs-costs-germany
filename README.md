@@ -6,3 +6,7 @@ This repository complements our report, **Daniell et al. (2025)**, which introdu
 
 # License
 The code in this repository is licensed under the MIT License. The input data are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+
+
+# ✍️ Attribution
+If you use or adapt this work, please cite the original authors and link back to this repository.
