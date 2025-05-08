@@ -1,8 +1,8 @@
 # The rising cost of **Long COVID and ME/CFS** in Germany (2020 - 2024)
 
-[Link to paper 📄]()
+[Link to report 📄]()
 
-Code and data to (1) simulate the progression of Long COVID and ME/CFS cases over time within Germany and (2) calculate the costs incurred by these cases.
+This repository complements our report, **Daniell et al. (2025)**, which introduces a reproducible framework for modelling the progression of SARS-CoV-2 infections to Long COVID and/or ME/CFS as well as calculating associated costs. The model simulates the progression of these conditions over time by integrating COVID-19 case data with vaccination rates, reinfection probabilities, and age group distributions. It estimates the resulting health outcomes and uses established risk modeling approaches to quantify associated societal, employer, and personal costs. The scripts provided here implement the simulation and economic estimation methods described in the report, enabling users to replicate key findings, test assumptions, or adapt the model to different contexts.
 
 # License
-The code in this repository is licensed under the MIT License. The input data (CSV files) are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+The code in this repository is licensed under the MIT License. The input data are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
