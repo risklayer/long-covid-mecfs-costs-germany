@@ -26,11 +26,11 @@ mecfs_recovery_rate = 0.05 #0.1
 daily_recovery_rate = mecfs_recovery_rate / 365  # Daily recovery rate
 
 # Define permutation options and select a specific permutation index
-age_groups_options = ["[0.23899,0.171371,0.196573,0.393066]"]
-#age_groups_options = ["[0.184640, 0.238318, 0.273365, 0.303677]"]
+age_groups_options = ["[0.23899,0.171371,0.196573,0.393066]"] # Population distribution 2
+#age_groups_options = ["[0.184640, 0.238318, 0.273365, 0.303677]"] # Population distribution 1
 reinfection_options = [True]
-long_covid_disability_options = [0.4]
-mecfs_disability_options = [0.58]
+long_covid_disability_options = [0.4] # low severity: 0.24, high severity: 0.4
+mecfs_disability_options = [0.58] # low severity: 0.31, high severity: 0.58
 
 # Define permutations and select a specific permutation index
 permutations = [
